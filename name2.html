@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a alumni information form</title>
+<meta name="keywords" content=" JavaScript Form Validation, alumni information form" />
+<script type="text/javascript" >
+function formValidation()
+{
+
+var uname = document.fform.firstname;
+var u2name= document.fform.lastname;
+var uadd = document.fform.address;
+
+var uzip = document.fform.mnumber;
+var uemail = document.fform.emaile;
+
+if(allLetter(uname))
+{
+if(allLett(u2name))
+{
+if(ValidateEmail(uemail))
+{
+if(allnumeric(uzip))
+{
+if(alphanumeric(uadd))
+{
+
+
+
+}
+} 
+}
+} 
+}
+
+
+
+return false;
+
+} 
+
+
+
+function allLetter(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('First name must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+
+function allLett(u2name)
+{ 
+var letter = /^[A-Za-z]+$/;
+if(u2name.value.match(letter))
+{
+return true;
+}
+else
+{
+alert('Last name must have alphabet characters only');
+u2name.focus();
+return false;
+}
+}
+
+
+function alphanumeric(uadd)
+{ 
+var letters = /^[0-9a-zA-Z]+$/;
+if(uadd.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('User address must have alphanumeric characters only');
+uadd.focus();
+return false;
+}
+}
+
+
+
+function allnumeric(uzip)
+{ 
+var numbers = /^[0-9]+$/;
+if(uzip.value.match(numbers))
+{
+return true;
+}
+else
+{
+alert('Mobile number must have numeric characters only');
+uzip.focus();
+return false;
+}
+}
+
+
+function ValidateEmail(uemail)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(uemail.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+} 
+
+
+</script>
+</head>
+<body onload="document.fform.firstname.focus();">
+
+<p style="font-size: 50px;color: red;text-shadow:4px 2px 5px #00ff00;"align="center">  Alumni Information Form</p>
+    
+<div>    
+    <form method="post"name='fform' onSubmit="return formValidation();">
+    <table align="center" border="0">
+        <tr style="text-align: center;">
+        <td>First Name:- </td>
+            <td>
+            <input type="text" id="fname" name="firstname" placeholder="Your First name.." size="25" />
+            </td>        
+        </tr>    
+        
+        <tr style="text-align: center;">
+        <td>Last Name:- </td>
+            <td>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last name.." size="25"/>
+            </td>        
+        </tr>    
+        
+        <tr style="text-align: center;">
+        <td>Email:- </td>
+            <td>
+            <input type="text" id="email" name="emaile" placeholder="Your email.." size="50" />
+            </td>        
+        </tr>    
+        
+        <tr style="text-align: center;">
+        <td>Mobile number:- </td>
+            <td>
+            <input type="number" id="number" name="mnumber" placeholder="Your Mobile Number.." size="10"/>
+            </td>        
+        </tr>    
+        
+            <tr style="text-align: center;">
+        <td>Gender:- </td>
+            <td>Male
+            <input type="radio" name="gender" value="male" checked="True" />
+            <br>Female<input type="radio" name="gender" value="female"/></td>
+    
+        </tr>    
+        
+            
+        <tr>
+        <td>Birth Date:-</td>
+        <td> 
+            <input type="date" name="bd" value="birthday">        
+         </td>        
+        </tr>
+        
+        <tr>
+            <td>Address:-</td>
+            <td><textarea id="textarea" name="address"> </textarea>
+            </td>        
+        </tr>
+        <tr><td><br></td><td><br></td></tr>
+        <tr>
+            <td>Branch:-</td>
+            
+            <td><input type="radio" name="branch" value="CS" checked="True"/>CS  
+            <input type="radio" name="branch" value="AUTO" /> AUTO
+            <input type="radio" name="branch" value="CIVIL" /> CIVIL
+             <input type="radio" name="branch" value="IT" /> IT 
+            <input type="radio" name="branch" value="ELEX" /> ELEX  
+            <input type="radio" name="branch" value="Electronics" /> ELECTRONICS    
+            <input type="radio" name="branch" value="Chemical" /> CHEMICAL    
+            <input type="radio" name="branch" value="Mechanical" /> MECHANICAL</td>     
+            
+        </tr>
+        
+        <tr><td><br></td><td><br></td></tr>
+    
+        <tr>
+            <td>Hobbies:-</td>        
+            <td> Reading  <input type="checkbox" name="hobbies" value="reading"> &nbsp;  &nbsp; &nbsp;  &nbsp;
+                    Painting<input type="checkbox" name="hobbies" value="Painting" />    <br><br>
+                    Cricket<input type="checkbox" name="hobbies" value="cricket" />        &nbsp;  &nbsp; &nbsp;  &nbsp;
+                    Singing<input type="checkbox" name="hobbies" value="singing" />        <br><br>
+                    Football<input type="checkbox" name="hobbies" value="football" />        &nbsp;  &nbsp; &nbsp;  &nbsp;
+                    Basketball<input type="checkbox" name="hobbies" value="basketball" />        <br><br>
+                    Dancing<input type="checkbox" name="hobbies" value="dancing" />        &nbsp;  &nbsp; &nbsp;  &nbsp;
+                    Sketching<input type="checkbox" name="hobbies" value="sketching" />        <br><br>
+            </td>
+        </tr>
+    <tr><td><br></td><td><br></td></tr>
+        <tr><td><br></td><td><br></td></tr>
+        
+        <tr style="text-align: center;">
+            <td colspan="2"><input type="submit" name="submit"id="button"value="Submit">
+            
+            </td>        
+        </tr>
+      
+        <tr style="text-align: center;">
+            <td colspan="2"><input type="reset" name="reset"id="button"value="reset">
+            
+            </td>        
+        </tr>
+       
+    </table>
+    
+    </form>
+    </div>
+
+</body>
+</html> 

@@ -1,0 +1,213 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  
+}
+*:focus{
+  border: none;
+  outline: none;
+}
+
+header div.navbar{
+  width: auto;
+  height: 20vh;
+  background-color:white;
+}
+header div.navbar div.top{
+  align-items: center;
+  justify-content:space-between;
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+}
+header div.navbar div.top img{
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 40px;
+
+}
+header div.navbar div.button{
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+header div.navbar div.button i{
+  color: black;
+}
+section.intro{
+  height: 75vh;
+  background-color: whitesmoke;
+}
+section.intro div.pic img{
+   width: 10%;
+   height: 25%;
+   align-items: center;
+   display: flex;
+   margin-top: 50px;
+   margin-left: 40%;
+   margin-right: 40%;
+}
+section.intro div.computer img{
+  width: 30%;
+  height: 40%;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 35%;
+}
+section.intro h2{
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  color: black;
+  display: flex;
+}
+section.intro p{
+  margin-top: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  color: black;
+  display: flex;
+}
+section.description div.intro{
+  background-color: rgb(245, 181, 21);
+  height: 50vh;
+}
+section.description div.intro h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 40%;
+  margin-right: 30%;
+  margin-top: 30px;
+  position: absolute;
+}
+section.description div.intro p{
+  font-size: 1.1rem;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 60px;
+  position: absolute;
+}
+section.description div.designer{
+  width: 60%;
+  background-color:rgb(252, 245, 232);
+  margin-right: 20%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  border-radius: 30px 25px;
+  margin-top: -90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+section.description div.designer h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+section.description div.designer p{
+  font-size: 1.1rem;
+  margin-left: 33%;
+  margin-right: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section.description div.designer i{
+  color:rgb(245, 181, 21) ;
+  margin-left: 51%;
+  margin-right: 40%;
+  width: 1%;
+  height: 1%;
+}
+section.description div.designer li{
+  font-size: 1.1rem;
+  margin-left: 33%;
+  margin-right: 30%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+  color: black;
+}
+footer div.type div.company{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  list-style-type: none;
+}
+footer div.type div.about{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  list-style-type: none;
+}
+footer div.type div.support{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  list-style-type: none;
+}
+footer{
+  height: 40vh;
+  background-color:rgb(235, 235, 232);
+}
+footer div.links input{
+  margin-top: 20px;
+  padding: 15px 10px;
+  width: 25%;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius:20px 15px;
+  align-items: center;
+  margin-left: 35%;
+}
+footer div.type{
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+footer div.app{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+footer div.app div.links{
+  display: inline;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+footer hr{
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+  color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+}
